@@ -20,13 +20,21 @@ document.addEventListener("keydown", function (e) {
    if (e.code === "ArrowLeft") {
       hiHat.play();
       hiHat.currentTime = 0;
+      hiHatBtn.style.backgroundColor = "#b0b0b0";
+      setTimeout(function () {
+         hiHatBtn.style.backgroundColor = "#e8e8e8";
+      }, 75);
    }
 });
 
 document.addEventListener("keydown", function (e) {
    if (e.code === "ArrowUp") {
       crashCymb.play();
-      crashCymb.currentTime = 0;
+      crashCymb.currentTime = 0.2;
+      crashCymbBtn.style.backgroundColor = "#b0b0b0";
+      setTimeout(function () {
+         crashCymbBtn.style.backgroundColor = "#e8e8e8";
+      }, 75);
    }
 });
 
@@ -34,14 +42,21 @@ document.addEventListener("keydown", function (e) {
    if (e.code === "ArrowRight") {
       rideCymb.play();
       rideCymb.currentTime = 0;
+      rideCymbBtn.style.backgroundColor = "#b0b0b0";
+      setTimeout(function () {
+         rideCymbBtn.style.backgroundColor = "#e8e8e8";
+      }, 75);
    }
 });
 
-document.addEventListener("keyup", function (e) {
+document.addEventListener("keydown", function (e) {
    if (e.code === "Space") {
       bass.play();
       bass.currentTime = 0.03;
-      console.log("space pressed");
+      bassBtn.style.backgroundColor = "#b0b0b0";
+      setTimeout(function () {
+         bassBtn.style.backgroundColor = "#e8e8e8";
+      }, 75);
    }
 });
 
@@ -49,6 +64,10 @@ document.addEventListener("keydown", function (e) {
    if (e.key === "q") {
       snare.play();
       snare.currentTime = 0;
+      snareBtn.style.backgroundColor = "#b0b0b0";
+      setTimeout(function () {
+         snareBtn.style.backgroundColor = "#e8e8e8";
+      }, 75);
    }
 });
 
@@ -56,6 +75,10 @@ document.addEventListener("keydown", function (e) {
    if (e.key === "w") {
       highTom.play();
       highTom.currentTime = 0;
+      highTomBtn.style.backgroundColor = "#b0b0b0";
+      setTimeout(function () {
+         highTomBtn.style.backgroundColor = "#e8e8e8";
+      }, 75);
    }
 });
 
@@ -63,6 +86,10 @@ document.addEventListener("keydown", function (e) {
    if (e.key === "e") {
       mediumTom.play();
       mediumTom.currentTime = 0;
+      mediumTomBtn.style.backgroundColor = "#b0b0b0";
+      setTimeout(function () {
+         mediumTomBtn.style.backgroundColor = "#e8e8e8";
+      }, 75);
    }
 });
 
@@ -70,45 +97,81 @@ document.addEventListener("keydown", function (e) {
    if (e.key === "r") {
       floorTom.play();
       floorTom.currentTime = 0;
+      floorTomBtn.style.backgroundColor = "#b0b0b0";
+      setTimeout(function () {
+         floorTomBtn.style.backgroundColor = "#e8e8e8";
+      }, 75);
    }
 });
 
 hiHatBtn.addEventListener("mousedown", () => {
    hiHat.play();
-   hiHat.currentTime = 0;
+   hiHat.currentTime = 0.05;
+   hiHatBtn.style.backgroundColor = "#b0b0b0";
+   setTimeout(function () {
+      hiHatBtn.style.backgroundColor = "#e8e8e8";
+   }, 75);
 });
 
 crashCymbBtn.addEventListener("mousedown", () => {
    crashCymb.play();
-   crashCymbBtn.currentTime = 0;
+   crashCymb.currentTime = 0.2;
+   crashCymbBtn.style.backgroundColor = "#b0b0b0";
+   setTimeout(function () {
+      crashCymbBtn.style.backgroundColor = "#e8e8e8";
+   }, 75);
 });
 
 rideCymbBtn.addEventListener("mousedown", () => {
    rideCymb.play();
    rideCymb.currentTime = 0;
+   rideCymbBtn.style.backgroundColor = "#b0b0b0";
+   setTimeout(function () {
+      rideCymbBtn.style.backgroundColor = "#e8e8e8";
+   }, 75);
 });
 
 bassBtn.addEventListener("mousedown", () => {
    bass.play();
    bass.currentTime = 0;
+   bassBtn.style.backgroundColor = "#b0b0b0";
+   setTimeout(function () {
+      bassBtn.style.backgroundColor = "#e8e8e8";
+   }, 75);
 });
 
 snareBtn.addEventListener("mousedown", () => {
    snare.play();
    snare.currentTime = 0;
+   snareBtn.style.backgroundColor = "#b0b0b0";
+   setTimeout(function () {
+      snareBtn.style.backgroundColor = "#e8e8e8";
+   }, 75);
 });
 
 highTomBtn.addEventListener("mousedown", () => {
    highTom.play();
    highTom.currentTime = 0;
+   highTomBtn.style.backgroundColor = "#b0b0b0";
+   setTimeout(function () {
+      highTomBtn.style.backgroundColor = "#e8e8e8";
+   }, 75);
 });
 
 mediumTomBtn.addEventListener("mousedown", () => {
    mediumTom.play();
    mediumTom.currentTime = 0;
+   mediumTomBtn.style.backgroundColor = "#b0b0b0";
+   setTimeout(function () {
+      mediumTomBtn.style.backgroundColor = "#e8e8e8";
+   }, 75);
 });
 
 floorTomBtn.addEventListener("mousedown", () => {
    floorTom.play();
    floorTom.currentTime = 0;
+   floorTomBtn.style.backgroundColor = "#b0b0b0";
+   setTimeout(function () {
+      floorTomBtn.style.backgroundColor = "#e8e8e8";
+   }, 75);
 });
